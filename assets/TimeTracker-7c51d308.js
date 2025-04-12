@@ -1,0 +1,1 @@
+class a{constructor(e){this.manager=e}initialize(){this.checkTimeBasedAchievements()}checkTimeBasedAchievements(){const e=new Date,i=e.getHours(),n=e.getDay();i>=0&&i<5&&this.manager.unlockAchievement("night-owl"),i>=5&&i<8&&this.manager.unlockAchievement("early-bird"),(n===0||n===6)&&this.manager.unlockAchievement("weekend-warrior")}cleanup(){}}export{a as default};
